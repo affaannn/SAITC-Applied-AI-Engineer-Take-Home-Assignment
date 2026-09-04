@@ -28,3 +28,10 @@ retrieval:
 index:
   faiss_path: "data/index/faiss.index"
   documents_path: "data/index/chunks.json"
+
+reranker:
+  model: "BAAI/bge-reranker-base"
+  top_k: 6
+
+evidence:
+  max_chunks: 8

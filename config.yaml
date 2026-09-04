@@ -1,0 +1,18 @@
+corpus:
+  data_dir: "data/raw"
+  manifest: "data/raw/corpus_manifest.json"
+  as_of_date: "2026-08-27"
+
+chunking:
+  tokenizer: "BAAI/bge-small-en-v1.5"
+
+  target_tokens: 300
+  max_tokens: 450
+  min_tokens: 40
+  overlap_tokens: 50
+
+  preserve_sections: true
+  preserve_tables: true
+
+output:
+  chunks_file: "data/processed/chunks.jsonl"

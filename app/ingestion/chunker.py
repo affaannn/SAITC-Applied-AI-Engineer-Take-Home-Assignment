@@ -281,6 +281,9 @@ class DocumentChunker:
             page_record["text"]
         )
 
+        sections = self._merge_small_sections(
+            sections
+        )
         chunks = []
         chunk_index = 1
 
